@@ -66,7 +66,7 @@ moves quickly to escape the line of fire
 
 ## **▶️ How to run**
 
-> 1. 1. Install Robocode
+> 1. Install Robocode
 > 2. Copy the .java file to the folder:
      Robocode/robots/autobots
 > 3. Compile the robot within Robocode.
