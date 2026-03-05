@@ -13,17 +13,19 @@ receiving shots
 colliding with walls
 controlling radar, movement, and weapons
 The goal is to implement intelligent combat strategies through programming.
+<br>
 
 ## **🧠 Robot Strategy**
 
 > The Jetpower Optimus Prime uses a simple strategy based on distance control and event response.
-
+<br>
 ## **🔎 Enemy detection**
 
 > When an enemy is detected (onScannedRobot):
 > 1. The robot calculates the enemy's absolute angle.
 > 2. Adjusts the cannon to aim at the target.
 > 3. Adjusts the radar to keep the enemy constantly tracked.
+<br>
 
 ## **🔥 Attack**
 
@@ -31,6 +33,7 @@ The goal is to implement intelligent combat strategies through programming.
 The robot maintains its position.
 It aligns the cannon with the enemy.
 It fires at maximum power (3.0) when the cannon is aligned.
+<br>
 
 ## **🛡️ Tactical retreat**
 
@@ -39,6 +42,7 @@ The robot enters evasion mode.
 It rotates 180° relative to the enemy.
 It moves backward, increasing the distance.
 This avoids very close combat, where the risk of damage is greater.
+<br>
 
 ## **🧱 Collision with walls**
 
@@ -46,6 +50,7 @@ This avoids very close combat, where the risk of damage is greater.
 it moves back 50 units
 it rotates 45°
 it attempts to reposition itself in the arena
+<br>
 
 ## **💥 When he is hit by a gunshot**
 
@@ -53,6 +58,7 @@ it attempts to reposition itself in the arena
 if in danger mode
 turns in the opposite direction from the enemy
 moves quickly to escape the line of fire
+<br>
 
 ## **🛠️ Technologies used**
 
@@ -60,10 +66,12 @@ moves quickly to escape the line of fire
 > Robocode API
 > Object-Oriented Programming
 > Event-based programming
+<br>
 
 ## **📂 Project structure**
 `` autobots/
 └── JetpowerOptimusPrime.java``
+<br>
 
 ## **▶️ How to run**
 
@@ -72,7 +80,8 @@ moves quickly to escape the line of fire
      Robocode/robots/autobots
 > 3. Compile the robot within Robocode.
 > 4. Run battles in the arena selecting JetpowerOptimusPrime.
-
+<br>
+ 
 ## **📚 Academic context**
 
 > This project was developed as a practical activity in the Introduction to Autonomous Mobile Robots course of the Internet Systems undergraduate program, with the objective of practicing:
@@ -80,6 +89,7 @@ object-oriented programming
 control logic
 event-driven programming
 development of algorithmic strategies
+<br>
 
 ## **👨‍💻 Author**
 
