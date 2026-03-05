@@ -19,6 +19,7 @@ The goal is to implement intelligent combat strategies through programming.
 
 > The Jetpower Optimus Prime uses a simple strategy based on distance control and event response.
 <br>
+
 ## **🔎 Enemy detection**
 
 > When an enemy is detected (onScannedRobot):
