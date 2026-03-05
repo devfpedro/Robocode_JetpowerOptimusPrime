@@ -2,6 +2,7 @@
 
 > A robot developed in Java using the Robocode library, created as part of an academic activity to explore concepts of object-oriented programming, events, and algorithmic strategy in simulated environments.
 The Jetpower Optimus Prime robot uses a safe distance-based strategy: it attacks when the enemy is far away and performs a tactical retreat maneuver when the opponent gets too close.
+<br>
 
 ## **🎮 About Robocode**
 
