@@ -93,5 +93,5 @@ development of algorithmic strategies
 
 ## **👨‍💻 Author**
 
-**Pedro Henrique Santos de Pontes
-Technology student in Sistemas para Internet**
+**Pedro Henrique Santos de Pontes**
+**Technology student in Sistemas para Internet**
