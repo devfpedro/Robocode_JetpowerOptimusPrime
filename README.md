@@ -1,85 +1,86 @@
 # **🤖 Jetpower Optimus Prime - Robocode Robot**
 
-> Robô desenvolvido em Java utilizando a biblioteca do Robocode, criado como parte de uma atividade acadêmica para explorar conceitos de programação orientada a objetos, eventos e estratégia algorítmica em ambientes simulados.
-O robô Jetpower Optimus Prime utiliza uma estratégia baseada em distância segura: ele ataca quando o inimigo está distante e realiza uma manobra de recuo tático quando o adversário se aproxima demais.
+> A robot developed in Java using the Robocode library, created as part of an academic activity to explore concepts of object-oriented programming, events, and algorithmic strategy in simulated environments.
+The Jetpower Optimus Prime robot uses a safe distance-based strategy: it attacks when the enemy is far away and performs a tactical retreat maneuver when the opponent gets too close.
 
-## **🎮 Sobre o Robocode**
+## **🎮 About Robocode**
 
-> Robocode é um jogo/programa educacional de programação onde robôs controlados por código lutam em uma arena. Cada robô é desenvolvido em Java e reage a eventos do ambiente, como:
-detectar inimigos
-receber tiros
-colidir com paredes
-controlar radar, movimento e armas
-O objetivo é implementar estratégias inteligentes de combate através da programação.
+> Robot developed in Java using the Robocode library, created as part of an academic activity to explore concepts of object-oriented programming, events, and algorithmic strategy in simulated environments.
+Robocode is an educational programming game/program where code-controlled robots fight in an arena. Each robot is developed in Java and reacts to environmental events, such as:
+detecting enemies
+receiving shots
+colliding with walls
+controlling radar, movement, and weapons
+The goal is to implement intelligent combat strategies through programming.
 
-## **🧠 Estratégia do Robô**
+## **🧠 Robot Strategy**
 
-> O Jetpower Optimus Prime utiliza uma estratégia simples baseada em controle de distância e resposta a eventos.
+> The Jetpower Optimus Prime uses a simple strategy based on distance control and event response.
 
-## **🔎 Detecção de inimigos**
+## **🔎 Enemy detection**
 
-> Quando um inimigo é detectado (onScannedRobot):
-> 1. O robô calcula o ângulo absoluto do inimigo.
-> 2. Ajusta o canhão para mirar no alvo.
-> 3. Ajusta o radar para manter o inimigo constantemente rastreado.
+> When an enemy is detected (onScannedRobot):
+> 1. The robot calculates the enemy's absolute angle.
+> 2. Adjusts the cannon to aim at the target.
+> 3. Adjusts the radar to keep the enemy constantly tracked.
 
-## **🔥 Ataque**
+## **🔥 Attack**
 
-> Se o inimigo estiver fora da distância segura (250 unidades):
-O robô mantém posição.
-Alinha o canhão com o inimigo.
-Dispara com potência máxima (3.0) quando o canhão está alinhado.
+> If the enemy is outside the safe distance (250 units):
+The robot maintains its position.
+It aligns the cannon with the enemy.
+It fires at maximum power (3.0) when the cannon is aligned.
 
-## **🛡️ Recuo tático**
+## **🛡️ Tactical retreat**
 
-> Se o inimigo estiver muito próximo (< 250 unidades):
-O robô entra em modo de evasão.
-Gira 180° em relação ao inimigo.
-Move-se para trás aumentando a distância.
-Isso evita combates muito próximos, onde o risco de dano é maior.
+> If the enemy is too close (< 250 units):
+The robot enters evasion mode.
+It rotates 180° relative to the enemy.
+It moves backward, increasing the distance.
+This avoids very close combat, where the risk of damage is greater.
 
-## **🧱 Colisão com paredes**
+## **🧱 Collision with walls**
 
-> Se o robô colidir com uma parede (onHitWall):
-recua 50 unidades
-gira 45°
-tenta reposicionar-se na arena
+> If the robot collides with a wall (onHitWall):
+it moves back 50 units
+it rotates 45°
+it attempts to reposition itself in the arena
 
-## **💥 Quando é atingido por um tiro**
+## **💥 When he is hit by a gunshot**
 
-> Caso seja atingido (onHitByBullet):
-se estiver em modo de perigo
-gira na direção oposta ao inimigo
-avança rapidamente para escapar da linha de tiro
+> If hit (onHitByBullet):
+if in danger mode
+turns in the opposite direction from the enemy
+moves quickly to escape the line of fire
 
-## **🛠️ Tecnologias utilizadas**
+## **🛠️ Technologies used**
 
 > Java
 > Robocode API
-> Programação Orientada a Objetos
-> Programação baseada em eventos
+> Object-Oriented Programming
+> Event-based programming
 
-## **📂 Estrutura do projeto**
+## **📂 Project structure**
 `` autobots/
 └── JetpowerOptimusPrime.java``
 
-## **▶️ Como executar**
+## **▶️ How to run**
 
-> 1. Instale o Robocode
-> 2. Copie o arquivo .java para a pasta:
-Robocode/robots/autobots
-> 3. Compile o robô dentro do Robocode.
-> 4. Execute batalhas na arena selecionando JetpowerOptimusPrime.
+> 1. 1. Install Robocode
+> 2. Copy the .java file to the folder:
+     Robocode/robots/autobots
+> 3. Compile the robot within Robocode.
+> 4. Run battles in the arena selecting JetpowerOptimusPrime.
 
-## **📚 Contexto acadêmico**
+## **📚 Academic context**
 
-> Este projeto foi desenvolvido como atividade prática na disciplina de Introdução aos Robôs Móveis Autônomos da graduação em Sistemas para Internet, com o objetivo de praticar:
-programação orientada a objetos
-lógica de controle
-programação dirigida a eventos
-desenvolvimento de estratégias algorítmicas
+> This project was developed as a practical activity in the Introduction to Autonomous Mobile Robots course of the Internet Systems undergraduate program, with the objective of practicing:
+object-oriented programming
+control logic
+event-driven programming
+development of algorithmic strategies
 
-## **👨‍💻 Autor**
+## **👨‍💻 Author**
 
 **Pedro Henrique Santos de Pontes**
->Estudante de Tecnologia em Sistemas para Internet
+>Technology student in Sistemas para Internet
