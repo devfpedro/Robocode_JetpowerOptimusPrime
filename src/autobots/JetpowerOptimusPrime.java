@@ -1,3 +1,5 @@
+package autobots;
+
 import robocode.AdvancedRobot;
 import robocode.HitByBulletEvent;
 import robocode.HitWallEvent;
@@ -17,7 +19,6 @@ public class JetpowerOptimusPrime extends AdvancedRobot {
     @Override
     public void run() {
         setColors(Color.blue, Color.red,  Color.black);
-
         setAdjustRadarForGunTurn(true);
         setAdjustGunForRobotTurn(true);
 
@@ -30,7 +31,7 @@ public class JetpowerOptimusPrime extends AdvancedRobot {
     @Override
     public void onScannedRobot(ScannedRobotEvent event) {
         enemyBearing = event.getBearing();
-        enemyBearing = event.getDistance();
+        enemyDistance = event.getDistance();
 
         double absoluteBearing = getHeading() + enemyBearing;
         double gunTurnAmount = Utils.normalRelativeAngleDegrees(absoluteBearing - getGunHeading());
@@ -50,11 +51,12 @@ public class JetpowerOptimusPrime extends AdvancedRobot {
                 setFire(3.0);
             }
 
-            double radarTurn = Utils.normalRelativeAngleDegrees(absoluteBearing - getRadarHeading());
-            setTurnRadarRight(radarTurn * 2);
 
-            execute();
         }
+
+        double radarTurn = Utils.normalRelativeAngleDegrees(absoluteBearing - getRadarHeading());
+        setTurnRadarRight(radarTurn * 2);
+        execute();
     }
 
     @Override
